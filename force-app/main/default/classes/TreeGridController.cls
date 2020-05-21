@@ -14,6 +14,17 @@ public with sharing class TreeGridController {
  concatenate
  
  */
+//HKA 21.05.2020 construct the data in the form of treegrid
+@AuraEnabled(cacheable=true)
+public static List<ProductTypeWrapper> getTreeGridData(){
+  List<Product__c> listProducts = [select Id,technology__r.Name,Product_Type__r.Name,Component__r.Name from Product__c];
+  List<ProductTypeWrapper> returnedResult = new List<ProductTypeWrapper> ();
+
+  return returnedResult;
+
+}
+
+
 public Class ProductTypeWrapper{
     @AuraEnabled
     public String Id {get;set;}
