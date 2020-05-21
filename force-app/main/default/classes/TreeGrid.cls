@@ -64,18 +64,3 @@ public with sharing class TreeGrid {
      }
  }
 
- /* *
- 
- Wrapper product type name, id list technology
- wrapper technology id name, list component
- wrapper component  id, name,
-
- recuperate list of product__c (soql)
-
- construct une wrapper product type (list)
- constructy wrapper technoly (list)
- construct wrapper componponent (list)
-
- concatenate
- 
- */
